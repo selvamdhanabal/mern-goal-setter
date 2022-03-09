@@ -10,6 +10,10 @@ const protect = asyncHandler(async (req, res, next) => {
         try {
             // Get toker from header
             token = req.headers.authorization.split(' ')[1];
+
+            if(!token){
+                return res.status(401).json({errorMessage : "Invalid Authentication"})
+            }
     
             // Verify toker
             const decode = jwt.verify(token, process.env.JWT_SCERET);

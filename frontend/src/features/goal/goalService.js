@@ -16,7 +16,7 @@ const createGoal = async (goalData, token) => {
 }
 
 // Get user goals
-const getGoals = async (goalData, token) => {
+const getGoals = async (token) => {
     const config = {
         headers: {
             Authorization: `Bearer ${token}`
