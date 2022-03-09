@@ -6,7 +6,7 @@ This is the goalsetter app from the Learn the MERN Stack series on YouTube.
 Rename the .envexample to .env and add your MONGO_URI
 
 # Install dependencies
-# Backend deps
+``Backend deps``
 npm install
 
 # Frontend deps
